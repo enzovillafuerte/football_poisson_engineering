@@ -17,6 +17,7 @@ import os
 import warnings
 import time
 from scipy.stats import poisson
+from datetime import datetime
 
 
 # Functions from Module created
@@ -581,7 +582,7 @@ df_h2h
 
 #### Saving dataframes into csv's #####
 today = datetime.today()
-today = today.strftime("%m/%d/%Y")
+today = today.strftime("%m-%d-%Y")
 
 # Defining target directory
 output_dir = 'Predictions'
